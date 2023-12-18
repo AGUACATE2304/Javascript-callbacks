@@ -1,3 +1,5 @@
+import onError from "./callbacks/onError.js";
+import onSuccess from "./callbacks/onSuccess.js";
 /**
  * Define 'createUser' function and signature (JSDocs)
  *
@@ -13,3 +15,22 @@
  * output
  *  - string
  */
+
+/**
+ *
+ * @param {string} email
+ * @param {function} onError
+ * @param {function} onSuccess
+ * @returns {string}
+ */
+
+function createUser(email, onError, onSuccess) {
+  const generatedNumber = Math.random() * 1;
+
+  if (generatedNumber < 0.5) {
+    return onError();
+  }
+  return onSuccess(email);
+}
+
+export default createUser;
