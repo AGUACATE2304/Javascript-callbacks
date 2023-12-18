@@ -9,6 +9,10 @@
  *  - array
  */
 
+/**
+ * @param {string} value
+ * @returns {Array}
+ */
 const onSuccess = function (value) {
   const wordsArray = value.split(/\s+/);
   const filteredWords = wordsArray.filter((word) => word.trim() !== "");

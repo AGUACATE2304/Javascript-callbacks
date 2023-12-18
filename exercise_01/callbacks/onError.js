@@ -8,6 +8,10 @@
  *  - empty array
  */
 
+/**
+ *
+ * @returns {Array}
+ */
 const onError = function () {
   return [];
 };

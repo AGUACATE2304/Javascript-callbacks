@@ -15,6 +15,13 @@ import onSuccess from "./callbacks/onSuccess.js";
  *  - array
  */
 
+/**
+ * @param {string} value
+ * @param {function} onError
+ * @param {function} onSuccess
+ * @returns {Array}
+ */
+
 const transformStringToArray = (value, onError, onSuccess) => {
   if (typeof value !== "string" || value.trim() === "") {
     return onError();
