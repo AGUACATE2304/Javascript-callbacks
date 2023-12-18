@@ -11,7 +11,7 @@
 
 /**
  * Returns a string of a given email
- * @param {string} email given string 
+ * @param {string} email given string
  * @returns {string}
  */
 function onSuccess(email) {
