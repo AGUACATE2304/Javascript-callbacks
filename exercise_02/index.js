@@ -12,6 +12,6 @@ console.log(emptyEmail);
 const notEmptyEmail = createUser(
   "alan.castillo.e@gmail.com",
   onError,
-  onSuccess
+  onSuccess,
 );
 console.log(notEmptyEmail);
