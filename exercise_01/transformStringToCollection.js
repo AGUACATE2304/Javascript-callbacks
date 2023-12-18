@@ -1,3 +1,5 @@
+import onError from "./callbacks/onError.js";
+import onSuccess from "./callbacks/onSuccess.js";
 /**
  * Define 'transformStringToArray' function and signature (JSDocs)
  *
@@ -12,3 +14,13 @@
  * output
  *  - array
  */
+
+const transformStringToArray = (value, onError, onSuccess) => {
+  if (typeof value !== "string" || value.trim() === "") {
+    return onError();
+  }
+
+  return onSuccess(value);
+};
+
+export default transformStringToArray;

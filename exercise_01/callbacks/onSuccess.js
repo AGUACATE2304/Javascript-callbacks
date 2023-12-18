@@ -8,3 +8,12 @@
  * output:
  *  - array
  */
+
+const onSuccess = function (value) {
+  const wordsArray = value.split(/\s+/);
+  const filteredWords = wordsArray.filter((word) => word.trim() !== "");
+
+  return filteredWords;
+};
+
+export default onSuccess;
