@@ -10,8 +10,8 @@
  */
 
 /**
- * It receives an email as string and returns a string
- * @param {string} email
+ * Returns a string of a given email
+ * @param {string} email given string 
  * @returns {string}
  */
 function onSuccess(email) {

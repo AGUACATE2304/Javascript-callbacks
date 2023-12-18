@@ -10,8 +10,9 @@
  */
 
 /**
- * @param {string} value
- * @returns {Array}
+ * return a string array with all words contained in it
+ * @param {string} value Given string
+ * @returns {Array} returned array with all words
  */
 const onSuccess = function (value) {
   const wordsArray = value.split(/\s+/);

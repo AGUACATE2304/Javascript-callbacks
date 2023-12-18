@@ -17,7 +17,7 @@ import onSuccess from "./callbacks/onSuccess.js";
  */
 
 /**
- *
+ * Create a user with the given email if a random number generated is less than 0.5
  * @param {string} email
  * @param {function} onError
  * @param {function} onSuccess

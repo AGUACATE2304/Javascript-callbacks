@@ -9,7 +9,7 @@
  */
 
 /**
- *
+ * returns empty array if this function is called
  * @returns {Array}
  */
 const onError = function () {

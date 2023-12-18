@@ -16,6 +16,7 @@ import onSuccess from "./callbacks/onSuccess.js";
  */
 
 /**
+ * return onError callback if value is not a string or it is an empty string and return onSuccess callback if not
  * @param {string} value
  * @param {function} onError
  * @param {function} onSuccess
